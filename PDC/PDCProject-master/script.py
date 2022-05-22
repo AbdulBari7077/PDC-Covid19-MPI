@@ -155,7 +155,7 @@ if rank == 0:
         # print("------",zipNames)
         
         for key,value in indiCount.items():
-            # print(key ,value)
+            print(key ,value)
             file.write(str(key) +"\t"+str(zipNames[str(key)])+ "\t" + str(value) +"\t"+ str(totalCount[key])+"\t"+ str(vCount[key])+"\n")
         # file.write("\b")
         file.close()

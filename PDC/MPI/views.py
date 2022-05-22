@@ -24,14 +24,14 @@ def home(request):
             "zipName": line[1],
             "positiveCount": line[2],
             "totalCount": line[3],
-            "positiveRatio": (round((int(line[2]) / int(line[3])) * 100)),
+            "positiveRatio": (round((int(line[2]) / int(line[3])) )),
             "vaccinationCount": line[4],
         }
 
         chartElem = {
             "zipname": (line[1]),
-            "positiveCount": int(line[2])*10000,
-            "vaccinationCount": int(line[4])*10000,
+            "positiveCount": int(line[2]),
+            "vaccinationCount": int(line[4]),
         }
         chartStr.append(chartElem)
         Array.append(dit)
